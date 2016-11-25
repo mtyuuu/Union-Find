@@ -15,7 +15,7 @@ This is the earliest time at which all members are connected.
 
 public class WeightedQuickUnionFind {
       private int parent[]; //parent of node
-      private int size[];   //size of component containing node i
+      private int size[];   //size of component with the root node i
       private int count;    //number of components
       
       public WeightedQuickUnionFind(int n){
