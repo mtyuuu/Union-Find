@@ -1,4 +1,4 @@
-out/*
+/*
 Social network connectivity. Given a social network containing n members and a log file containing m timestamps at which times pairs of 
 members formed friendships, design an algorithm to determine the earliest time at which all members are connected 
 (i.e., every member is a friend of a friend of a friend ... of a friend). 
@@ -40,7 +40,7 @@ public class WeightedQuickUnionFind {
             return p;
       }
       
-      publid void union(int p, int q){
+      public void union(int p, int q){
             int i = root(p);
             int j = root(q);
             if (i == j) return;
