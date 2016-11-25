@@ -1,4 +1,4 @@
-/*
+out/*
 Social network connectivity. Given a social network containing n members and a log file containing m timestamps at which times pairs of 
 members formed friendships, design an algorithm to determine the earliest time at which all members are connected 
 (i.e., every member is a friend of a friend of a friend ... of a friend). 
@@ -56,15 +56,15 @@ public class WeightedQuickUnionFind {
       }
       
       public boolean connected(int p, int q) {
-		       return root(p) == root(q);
+	    return root(p) == root(q);
       }
       
       public static void main(String[] args){
             WeightedQuickUnionFind wquf = new WeightedQuickUnionFind(5);
-            System.println("wquf.count() = " + wquf.count());
+            System.out.println("wquf.count() = " + wquf.count());
             wquf.union(0,1);
-            System.println("wquf.count() = " + wquf.count());
+            System.out.println("wquf.count() = " + wquf.count());
             wquf.union(2,4);
-            System.println("wquf.count() = " + wquf.count());
+            System.out.println("wquf.count() = " + wquf.count());
       }
 }
